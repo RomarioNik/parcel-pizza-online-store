@@ -1,0 +1,44 @@
+// --------  SECTION CONTACTS  -----------
+
+.contacts {
+  padding-top: 65px;
+  padding-bottom: 115px;
+  background: url('../images/bg/contacts-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  &__item {
+    max-width: 250px;
+  }
+
+  &__svg {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+  }
+
+  &__link {
+    font-size: 17px;
+    line-height: calc(29 / 17);
+    color: var(--text-color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    text-decoration: underline;
+    color: var(--headers-color);
+  }
+
+  &__hours-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

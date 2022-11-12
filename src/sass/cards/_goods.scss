@@ -1,0 +1,132 @@
+.goods {
+  position: relative;
+  width: 264px;
+  padding: 13px 13px 20px 13px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    opacity: 0;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.15;
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__label-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    font-size: 11px;
+    font-weight: 700;
+    line-height: calc(18 / 11);
+    letter-spacing: 1.1px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__card-label {
+    padding: 2px 5px 0 7px;
+    border-radius: 2px;
+  }
+
+  &__featured-label {
+    background-color: #d1333c;
+  }
+
+  &__new-label {
+    background-color: #74a757;
+  }
+
+  &__sale-label {
+    background-color: #fe8128;
+  }
+
+  &__description {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  &__link-title:hover,
+  &__link-title:focus {
+    opacity: 0.7;
+  }
+
+  &__title {
+    margin-top: 17px;
+    margin-bottom: 11px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--headers-color);
+  }
+
+  &__list-text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  &__item-text:not(:last-child):after {
+    content: '\002C';
+    margin-right: 4px;
+  }
+
+  &__price {
+    display: block;
+    margin-bottom: 13px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(24 / 20);
+    color: var(--headers-color);
+  }
+
+  &__button-cart {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    padding: 7px 25px;
+
+    font-weight: 500;
+    line-height: calc(24 / 14);
+    color: var(--buttons-text-color);
+
+    border-radius: 4px;
+    background-color: #ffd141;
+  }
+
+  &__button-cart:hover,
+  &__button-cart:focus {
+    background-color: #e6bc3b;
+  }
+
+  &__svg-cart {
+    padding-top: 2px;
+    margin-right: 8px;
+    fill: currentColor;
+  }
+}

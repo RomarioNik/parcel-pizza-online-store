@@ -1,0 +1,154 @@
+// --------  HEADER UP  -----------
+
+.header-up {
+  height: 58px;
+  background-color: #393d4a;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__wrap {
+    display: inline-flex;
+    align-items: center;
+
+    color: #ffffff;
+  }
+
+  &__svg-phone {
+    margin-right: 12px;
+    fill: currentColor;
+  }
+
+  &__phone {
+    display: inline-block;
+    margin-right: 22px;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: calc(17 / 17);
+  }
+
+  &__button {
+    font-weight: 700;
+    line-height: calc(14 / 14);
+    color: #ffffff;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  &__svg-avatar {
+    fill: currentColor;
+    margin-right: 11px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+
+    font-weight: 700;
+    line-height: calc(14 / 14);
+    color: #ffffff;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+// --------  HEADER MIDDLE  -----------
+
+.header-mid {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__link {
+    display: block;
+    color: var(--headers-color);
+  }
+
+  &__link-social {
+    fill: currentColor;
+  }
+
+  &__logo-link {
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    color: #d1333c;
+  }
+
+  &__logo {
+    fill: currentColor;
+  }
+
+  &__find {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__button {
+    color: var(--headers-color);
+  }
+
+  &__svg-find {
+    fill: currentColor;
+  }
+}
+
+// --------  HEADER DOWN  -----------
+
+.header-down {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  &__item {
+    width: 90px;
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-bottom: 35px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--buttons-text-color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: rgba(58, 61, 73, 0.6);
+  }
+
+  &__svg {
+    fill: currentColor;
+  }
+
+  &__span {
+    display: block;
+    padding-top: 11px;
+  }
+}

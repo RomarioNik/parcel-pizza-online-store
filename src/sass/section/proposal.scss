@@ -1,0 +1,25 @@
+// --------  SECTION PROPOSAL  -----------
+
+.proposal {
+  &__title {
+    margin-bottom: 45px;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: calc(44 / 40);
+    color: var(--headers-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__cards-list {
+    display: flex;
+    /* gap: 30px; */
+    padding-bottom: 40px;
+  }
+
+  &__cards-item {
+    margin-right: 30px;
+  }
+}

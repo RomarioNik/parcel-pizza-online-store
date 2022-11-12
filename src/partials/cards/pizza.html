@@ -1,0 +1,91 @@
+<article class="product-card__pizza pizza">
+  <div class="pizza__wrap">
+    <ul class="pizza__label-list">
+      <li class="goods__featured-label goods__card-label">Featured</li>
+      <li class="goods__new-label goods__card-label">New</li>
+      <li class="goods__sale-label goods__card-label">-17%</li>
+    </ul>
+
+    <a class="pizza__link-img" href="#">
+      <img
+        class="pizza__img"
+        src="./images/pizza/pizza-bianca-238x238.jpg"
+        alt="Pizza Bianca"
+        width="238"
+      />
+    </a>
+
+    <div class="pizza__description">
+      <a class="pizza__link-title" href="#">
+        <h2 class="pizza__title">Pizza Bianca</h2>
+      </a>
+
+      <ul class="pizza__list-info">
+        <li class="pizza__item-info">
+          <span class="pizza__hint-info">
+            <svg class="pizza__svg-hint" width="20" height="20">
+              <use href="./images/icons/sprite-pizza-shop.svg#icon-leaf"></use>
+            </svg>
+          </span>
+        </li>
+        <li class="pizza__item-info">
+          <span class="pizza__hint-info">
+            <svg class="pizza__svg-hint" width="20" height="20">
+              <use href="./images/icons/sprite-pizza-shop.svg#icon-peper"></use>
+            </svg>
+          </span>
+        </li>
+        <li class="pizza__item-info">
+          <button class="pizza__button-info btn" type="button">
+            <svg class="pizza__svg-info" width="20" height="20">
+              <use
+                href="./images/icons/sprite-pizza-shop.svg#icon-information"
+              ></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+
+      <ul class="pizza__list-text">
+        <li class="pizza__item-text">Garlic Flatbread with Mozzarella</li>
+        <li class="pizza__item-text">Parmesan</li>
+        <li class="pizza__item-text">Garlic</li>
+        <li class="pizza__item-text">Rosemary</li>
+      </ul>
+
+      <form class="pizza__form" action="">
+        <label class="pizza__label" for="crust-select">Crust</label>
+        <select class="pizza__select" name="crust" id="crust-select">
+          <option value="">Choose an option</option>
+          <option value="thick">thick</option>
+          <option value="thin">thin</option>
+        </select>
+
+        <label class="pizza__label" for="size-select">Size</label>
+        <select class="pizza__select-size" name="size" id="size-select">
+          <option value="">Choose an option</option>
+          <option value="25">25cm</option>
+          <option value="30">30cm</option>
+          <option value="35">35cm</option>
+        </select>
+
+        <button class="pizza__button-clear btn">
+          <svg class="pizza__svg-clear" width="12" height="12">
+            <use href="./images/icons/sprite-pizza-shop.svg#icon-clear"></use>
+          </svg>
+          Clear
+        </button>
+        <button class="pizza__button-extra btn">+ Extra option</button>
+        <span class="pizza__price">$13.99</span>
+        <button class="pizza__button-cart btn" type="button">
+          <svg class="pizza__svg-cart" width="13" height="14">
+            <use
+              href="./images/icons/sprite-pizza-shop.svg#icon-shopping-bag"
+            ></use>
+          </svg>
+          Add to cart
+        </button>
+      </form>
+    </div>
+  </div>
+</article>

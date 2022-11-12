@@ -1,0 +1,58 @@
+// --------  SECTION ADVERTISE  -----------
+
+.advertise {
+  padding-top: 40px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 14px;
+  }
+
+  &__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 28px 23px;
+    width: 100%;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: calc(44 / 30);
+    color: #4c4e56;
+    text-transform: uppercase;
+    text-align: end;
+  }
+
+  &__header {
+    margin-bottom: 10px;
+    letter-spacing: -1.6px;
+  }
+
+  &__span {
+    margin-bottom: 8px;
+
+    font-size: 28px;
+    font-weight: 200;
+    line-height: calc(35 / 28);
+  }
+
+  &__description--color {
+    color: #6f5e4d;
+  }
+
+  &__link {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #4c4e56;
+  }
+}

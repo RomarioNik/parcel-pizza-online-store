@@ -1,0 +1,56 @@
+// --------  SECTION PRODUCTS  -----------
+
+.products {
+  padding-top: 90px;
+  padding-bottom: 40px;
+
+  &__tabs-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
+  &__tabs-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__tabs-button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: calc(24 / 32);
+    color: var(--headers-color);
+
+    opacity: 0.15;
+    border-bottom: 1px;
+  }
+
+  &__tabs-button:hover,
+  &__tabs-button:focus {
+    opacity: 0.7;
+  }
+
+  &__tabs-button--active {
+    position: relative;
+    opacity: 1;
+  }
+
+  &__tabs-button--active::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 20px);
+    background-image: url('../images/icons/wave.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__cards-list {
+    display: flex;
+  }
+
+  &__cards-item:not(:last-child) {
+    margin-right: 28px;
+  }
+}

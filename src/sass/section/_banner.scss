@@ -1,0 +1,60 @@
+// --------  SECTION BANNER  -----------
+
+.banner {
+  padding-bottom: 33.7%;
+
+  &__img {
+    object-position: right;
+  }
+
+  &__description {
+    position: absolute;
+    top: 11%;
+    left: 22%;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    line-height: calc(22 / 50);
+    color: var(--headers-color);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__price {
+    display: inline-block;
+    margin-bottom: 80px;
+  }
+
+  &__name {
+    margin-bottom: 80px;
+
+    font-size: 86px;
+    font-weight: 700;
+    line-height: calc(22 / 86);
+    letter-spacing: -1px;
+  }
+
+  &__text {
+    margin-bottom: 80px;
+  }
+
+  &__button {
+    padding: 20px 30px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(14 / 20);
+    color: #ffffff;
+    text-transform: uppercase;
+
+    border-radius: 3px;
+    background-color: #51be42;
+  }
+
+  &__button:hover,
+  &__butto:focus {
+    color: #ffffff;
+    background-color: var(--buttons-text-color);
+  }
+}

@@ -1,0 +1,57 @@
+// --------  SECTION ADV  -----------
+
+.adv {
+  width: 100%;
+
+  background-image: url('../images/adv/green-tea.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+
+  &__description {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 136px;
+    padding-bottom: 136px;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: calc(44 / 36);
+    letter-spacing: -1.6px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__span {
+    display: block;
+    margin-bottom: 8;
+
+    font-size: 28px;
+    font-weight: 200;
+    line-height: calc(36 / 28);
+    /* letter-spacing: 1.6px; */
+  }
+
+  &__link {
+    display: block;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    opacity: 0.7;
+  }
+}
