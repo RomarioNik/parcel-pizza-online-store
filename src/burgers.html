@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <include src="./partials/head.html"></include>
+  <body>
+    <!-- HEADER -->
+    <include src="./partials/header.html"></include>
+
+    <!-- MAIN -->
+    <main class="page">
+      <section class="page__category category">
+        <div class="category__wrap-menu">
+          <div class="_container">
+            <ul class="category__menu-list">
+              <li class="category__menu-item">
+                <a class="category__menu-link" href="#">Home</a>
+              </li>
+              <li class="category__menu-item">
+                Burgers
+                <!-- <a class="category__menu-link" href="#">Pizza</a> -->
+              </li>
+            </ul>
+            <h1 class="category__title">Burgers</h1>
+          </div>
+        </div>
+
+        <div class="category__container">
+          <div class="category__wrap-products">
+            <div class="category__sort">
+              <ul class="category__filters filters">
+                <!-- <li class="filters__item">
+                  <button class="filters__button--active" type="button">All</button>
+                </li>
+                <li class="filters__item">
+                  <button class="filters__button" type="button">Spicy</button>
+                </li>
+                <li class="filters__item">
+                  <button class="filters__button" type="button">Vegetarian</button>
+                </li>
+                <li class="filters__item">
+                  <button class="filters__button" type="button">Mushrooms</button>
+                </li>
+                <li class="filters__item">
+                  <button class="filters__button" type="button">Meat</button>
+                </li>
+                <li class="filters__item">
+                  <button class="filters__button" type="button">Seafood</button>
+                </li> -->
+              </ul>
+
+              <form class="category__sort-form sort-form" action="">
+                <label class="sort-form__label" for="sort-select"></label>
+                <select class="sort-form__select" name="sort" id="sort-select">
+                  <option value="">Default sorting</option>
+                  <option value="popularity">Sort by popularity</option>
+                  <option value="rating">Sort by average rating</option>
+                  <option value="latest">Sort by latest</option>
+                  <option value="low">Sort by price: low to high</option>
+                  <option value="high">Sort by price: high to low</option>
+                </select>
+              </form>
+            </div>
+
+            <ul class="category__food food">
+              <li class="food__item">
+                <!-- PIZZA CARD -->
+                <include src="./partials/cards/goods-card.html"></include>
+              </li>
+              <li class="food__item">
+                <!-- PIZZA CARD -->
+                <include src="./partials/cards/goods-card.html"></include>
+              </li>
+              <li class="food__item">
+                <!-- PIZZA CARD -->
+                <include src="./partials/cards/goods-card.html"></include>
+              </li>
+              <li class="food__item">
+                <!-- PIZZA CARD -->
+                <include src="./partials/cards/goods-card.html"></include>
+              </li>
+              <li class="food__item">
+                <!-- PIZZA CARD -->
+                <include src="./partials/cards/goods-card.html"></include>
+              </li>
+              <li class="food__item"></li>
+            </ul>
+          </div>
+
+          <aside class="category__recomend recomend">
+            <h2 class="recomend__title">We recomend</h2>
+            <ul class="recomend__list">
+              <li class="recomend__item">
+                <!-- RECOMEND CARD -->
+                <include src="./partials/cards/recomend-card.html"></include>
+              </li>
+              <li class="recomend__item">
+                <!-- RECOMEND CARD -->
+                <include src="./partials/cards/recomend-card.html"></include>
+              </li>
+              <li class="recomend__item">
+                <!-- RECOMEND CARD -->
+                <include src="./partials/cards/recomend-card.html"></include>
+              </li>
+              <li class="recomend__item">
+                <!-- RECOMEND CARD -->
+                <include src="./partials/cards/recomend-card.html"></include>
+              </li>
+              <li class="recomend__item">
+                <!-- RECOMEND CARD -->
+                <include src="./partials/cards/recomend-card.html"></include>
+              </li>
+            </ul>
+
+            <form class="category__range range" action="">
+              <label class="range__label" for="range">Filter by price</label>
+              <input
+                class="range__slider"
+                type="range"
+                id="range"
+                name="range-slider"
+                min="0"
+                max="50"
+              />
+              <p class="range__price">
+                Price: <span class="range__price-from">$10</span> —
+                <span class="range__price-to">$20</span>
+              </p>
+              <button class="range__button" type="submit">Filter</button>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <include src="./partials/footer.html"></include>
+  </body>
+</html>

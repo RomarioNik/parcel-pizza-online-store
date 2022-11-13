@@ -1,0 +1,31 @@
+.recomend-card {
+  display: flex;
+
+  &__link-img {
+    margin-right: 15px;
+  }
+
+  &__img {
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__link-title {
+    color: var(--headers-color);
+  }
+
+  &__title {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+  }
+
+  &__price {
+  }
+}

@@ -2,14 +2,19 @@
 @import './section/advertise';
 @import './section/products';
 // card pizza include products
-@import './cards/pizza';
+@import './cards/pizza-card';
 
 @import './section/adv';
 @import './section/about';
 @import './section/proposal.scss';
 // card goods include proposal
-@import './cards/goods';
+@import './cards/goods-card';
 
 @import './section/subscribe.scss';
 @import './section/articles.scss';
 @import './section/contacts.scss';
+
+// product category
+@import './products-category/category';
+// recomend card include category
+@import './cards/recomend-card';

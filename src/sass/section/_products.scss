@@ -48,9 +48,6 @@
 
   &__cards-list {
     display: flex;
-  }
-
-  &__cards-item:not(:last-child) {
-    margin-right: 28px;
+    gap: 28px;
   }
 }
