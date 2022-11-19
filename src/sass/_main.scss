@@ -3,16 +3,21 @@
 @import './section/products';
 // card pizza include products
 @import './cards/pizza-card';
+// cmodal extra option
+@import './modals/modal-extra-option';
 
 @import './section/adv';
 @import './section/about';
-@import './section/proposal.scss';
+@import './section/proposal';
 // card goods include proposal
 @import './cards/goods-card';
 
-@import './section/subscribe.scss';
-@import './section/articles.scss';
-@import './section/contacts.scss';
+@import './section/subscribe';
+@import './section/articles';
+// card goods include proposal
+@import './blog/post';
+
+@import './section/contacts';
 
 // product category
 @import './products-category/category';

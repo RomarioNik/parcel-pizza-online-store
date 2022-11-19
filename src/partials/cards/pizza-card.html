@@ -6,45 +6,80 @@
       <li class="goods__sale-label goods__card-label">-17%</li>
     </ul>
 
-    <a class="pizza__link-img" href="#">
-      <img
-        class="pizza__img"
-        src="./images/pizza/pizza-bianca-238x238.jpg"
-        alt="Pizza Bianca"
-        width="238"
-      />
-    </a>
+    <div class="pizza__thumb">
+      <a class="pizza__link-img" href="#">
+        <img
+          class="pizza__img"
+          src="./images/pizza/pizza-bianca-238x238.jpg"
+          alt="Pizza Bianca"
+          width="238"
+        />
+      </a>
+      <div class="pizza__buttons-wrap">
+        <ul class="pizza__buttons-list">
+          <li class="pizza__buttons-item">
+            <button class="pizza__button-uper btn" type="button">
+              <svg class="pizza__svg-uper" width="16" height="16">
+                <use href="./images/icons/sprite-pizza-shop.svg#icon-zoom"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="pizza__buttons-item">
+            <button class="pizza__button-uper btn" type="button">
+              <svg class="pizza__svg-uper" width="18" height="18">
+                <use href="./images/icons/sprite-pizza-shop.svg#icon-favorite"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div class="pizza__description">
-      <a class="pizza__link-title" href="#">
-        <h2 class="pizza__title">Pizza Bianca</h2>
-      </a>
+      <a class="pizza__link-title" href="#">Pizza Bianca</a>
 
       <ul class="pizza__list-info">
         <li class="pizza__item-info">
-          <span class="pizza__hint-info">
+          <button class="pizza__button-sort btn">
             <svg class="pizza__svg-hint" width="20" height="20">
               <use href="./images/icons/sprite-pizza-shop.svg#icon-leaf"></use>
             </svg>
-          </span>
+            <span class="pizza__tooltip-sort">Vegetarian</span>
+          </button>
         </li>
         <li class="pizza__item-info">
-          <span class="pizza__hint-info">
+          <button class="pizza__button-sort btn">
             <svg class="pizza__svg-hint" width="20" height="20">
               <use href="./images/icons/sprite-pizza-shop.svg#icon-peper"></use>
             </svg>
-          </span>
+            <span class="pizza__tooltip-sort">Spicy</span>
+          </button>
         </li>
         <li class="pizza__item-info">
-          <button class="pizza__button-info btn" type="button">
+          <button class="pizza__button-info btn" type="button" data-facts-open>
             <svg class="pizza__svg-info" width="20" height="20">
-              <use
-                href="./images/icons/sprite-pizza-shop.svg#icon-information"
-              ></use>
+              <use href="./images/icons/sprite-pizza-shop.svg#icon-information"></use>
             </svg>
           </button>
         </li>
       </ul>
+
+      <div class="pizza__facts facts facts__is-hidden" data-facts>
+        <h4 class="facts__title">Nutritional facts</h4>
+        <ul class="facts__list">
+          <li class="facts__item">Serving Size 1 slice (63 g)</li>
+          <li class="facts__item">Per Serving:</li>
+          <li class="facts__item">Calories 168</li>
+          <li class="facts__item">Total Fat - 4.7g</li>
+          <li class="facts__item">Carbohydrates - 20.4g</li>
+          <li class="facts__item">Protein - 7.6g</li>
+        </ul>
+        <button class="facts__button btn" type="button" data-facts-close>
+          <svg class="facts__svg-close" width="8" height="8">
+            <use href="./images/icons/sprite-pizza-shop.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
 
       <ul class="pizza__list-text">
         <li class="pizza__item-text">Garlic Flatbread with Mozzarella</li>
@@ -75,13 +110,11 @@
           </svg>
           Clear
         </button>
-        <button class="pizza__button-extra btn">+ Extra option</button>
+        <button class="pizza__button-extra btn" data-modal-extra-open>+ Extra option</button>
         <span class="pizza__price">$13.99</span>
         <button class="pizza__button-cart btn" type="button">
           <svg class="pizza__svg-cart" width="13" height="14">
-            <use
-              href="./images/icons/sprite-pizza-shop.svg#icon-shopping-bag"
-            ></use>
+            <use href="./images/icons/sprite-pizza-shop.svg#icon-shopping-bag"></use>
           </svg>
           Add to cart
         </button>

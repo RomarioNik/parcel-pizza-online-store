@@ -75,6 +75,9 @@
   &__item-link {
     line-height: calc(16 / 14);
     color: #989da4;
+
+    opacity: 1;
+    transition: opacity var(--base-transition);
   }
 
   &__item-link:hover,
@@ -101,7 +104,16 @@
 
   &__link-social {
     display: inline-flex;
+
     color: currentColor;
+
+    opacity: 1;
+    transition: opacity var(--base-transition);
+  }
+
+  &__link-social:hover,
+  &__link-social:focus {
+    opacity: 0.7;
   }
 
   &__svg-social {

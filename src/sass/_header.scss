@@ -36,16 +36,13 @@
     font-weight: 700;
     line-height: calc(14 / 14);
     color: #ffffff;
+
+    transition: color var(--base-transition);
   }
 
   &__button:hover,
   &__button:focus {
     color: rgba(255, 255, 255, 0.55);
-  }
-
-  &__svg-avatar {
-    fill: currentColor;
-    margin-right: 11px;
   }
 
   &__link {
@@ -55,11 +52,18 @@
     font-weight: 700;
     line-height: calc(14 / 14);
     color: #ffffff;
+
+    transition: color var(--base-transition);
   }
 
   &__link:hover,
   &__link:focus {
     color: rgba(255, 255, 255, 0.55);
+  }
+
+  &__svg-avatar {
+    fill: currentColor;
+    margin-right: 11px;
   }
 }
 
@@ -80,6 +84,13 @@
   &__link {
     display: block;
     color: var(--headers-color);
+
+    transition: color var(--base-transition);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: rgba(58, 61, 73, 0.55);
   }
 
   &__link-social {
@@ -106,6 +117,13 @@
 
   &__button {
     color: var(--headers-color);
+
+    transition: color var(--base-transition);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: rgba(58, 61, 73, 0.55);
   }
 
   &__svg-find {
@@ -136,6 +154,8 @@
     font-weight: 700;
     line-height: 1.2;
     color: var(--buttons-text-color);
+
+    transition: color var(--base-transition);
   }
 
   &__link:hover,

@@ -40,14 +40,22 @@
     /* letter-spacing: 1.6px; */
   }
 
-  &__link {
-    display: block;
+  &__link-wrap {
+    display: flex;
+    justify-content: center;
+  }
 
+  &__link {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
     line-height: 1.2;
     letter-spacing: normal;
     color: #ffffff;
+
+    border-bottom: solid 2px currentColor;
+
+    opacity: 1;
+    transition: opacity var(--base-transition);
   }
 
   &__link:hover,

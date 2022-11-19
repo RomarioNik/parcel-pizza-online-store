@@ -1,17 +1,25 @@
 // --------  SECTION BANNER  -----------
 
 .banner {
-  padding-bottom: 33.7%;
+  position: relative;
 
   &__img {
+    height: 700px;
     object-position: right;
+    object-fit: cover;
+  }
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 
   &__description {
-    position: absolute;
-    top: 11%;
-    left: 22%;
-
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
     font-weight: 200;
@@ -39,8 +47,12 @@
     margin-bottom: 80px;
   }
 
-  &__button {
+  &__link {
+    display: block;
+    width: 178px;
     padding: 20px 30px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-size: 20px;
     font-weight: 700;
@@ -50,11 +62,12 @@
 
     border-radius: 3px;
     background-color: #51be42;
+
+    transition: background-color var(--base-transition);
   }
 
-  &__button:hover,
-  &__butto:focus {
-    color: #ffffff;
+  &__link:hover,
+  &__link:focus {
     background-color: var(--buttons-text-color);
   }
 }

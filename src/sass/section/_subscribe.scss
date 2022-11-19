@@ -57,6 +57,8 @@
 
     border-radius: 4px;
     background-color: var(--buttons-text-color);
+
+    transition: background-color var(--base-transition);
   }
 
   &__button:hover,

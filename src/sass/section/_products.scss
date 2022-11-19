@@ -23,6 +23,8 @@
 
     opacity: 0.15;
     border-bottom: 1px;
+
+    transition: opacity var(--base-transition);
   }
 
   &__tabs-button:hover,

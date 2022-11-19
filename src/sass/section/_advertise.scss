@@ -9,16 +9,30 @@
 
   &__item {
     position: relative;
+    overflow: hidden;
   }
 
   &__item:not(:last-child) {
     margin-right: 14px;
   }
 
+  &___img {
+    transform: scale(1);
+  }
+
+  &__item &__img {
+    transition: transform 500ms ease-out;
+  }
+
+  &__item:hover &__img {
+    transform: scale(1.05);
+  }
+
   &__description {
     position: absolute;
     top: 0;
     left: 0;
+
     padding: 28px 23px;
     width: 100%;
 
@@ -49,10 +63,22 @@
   }
 
   &__link {
+    position: relative;
+
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.2;
     color: #4c4e56;
+
+    border-bottom: solid 2px currentColor;
+
+    opacity: 1;
+    transition: opacity var(--base-transition);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    opacity: 0.7;
   }
 }
