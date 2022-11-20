@@ -14,11 +14,20 @@
     border: 1px solid #000;
     border-radius: 4px;
     opacity: 0;
+
+    transition: opacity var(--base-transition);
   }
 
   &:hover::before,
   &:focus::before {
     opacity: 0.15;
+  }
+
+  &:hover &__buttons-wrap,
+  &:focus &__buttons-wrap,
+  &:hover &__button-cart,
+  &:focus &__button-cart {
+    opacity: 1;
   }
 
   &__wrap {
@@ -61,17 +70,67 @@
     background-color: #fe8128;
   }
 
+  &__thumb {
+    position: relative;
+  }
+
+  &__link-img {
+    display: block;
+    width: 238px;
+  }
+
+  &__buttons-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    transition: opacity var(--base-transition);
+  }
+
+  &__buttons-list {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__buttons-item {
+    width: 37px;
+    height: 37px;
+
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+
+  &__button-uper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: var(--buttons-text-color);
+
+    transition: color var(--base-transition);
+  }
+
+  &__svg-uper {
+    fill: currentColor;
+  }
+
+  &__button-uper:hover,
+  &__button-uper:focus {
+    color: #757781;
+  }
+
   &__description {
     padding-left: 13px;
     padding-right: 13px;
   }
 
-  &__link-title:hover,
-  &__link-title:focus {
-    opacity: 0.7;
-  }
-
-  &__title {
+  &__link-title {
+    display: inline-block;
     margin-top: 17px;
     margin-bottom: 11px;
 
@@ -80,6 +139,14 @@
     font-weight: 700;
     line-height: 1.2;
     color: var(--headers-color);
+
+    opacity: 1;
+    transition: opacity var(--base-transition);
+  }
+
+  &__link-title:hover,
+  &__link-title:focus {
+    opacity: 0.7;
   }
 
   &__list-text {
@@ -117,6 +184,9 @@
 
     border-radius: 4px;
     background-color: #ffd141;
+
+    opacity: 0;
+    transition: background-color var(--base-transition), opacity var(--base-transition);
   }
 
   &__button-cart:hover,
