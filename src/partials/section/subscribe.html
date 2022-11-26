@@ -1,19 +1,19 @@
 <section class="page__subscribe subscribe">
   <div class="subscribe__container">
     <h2 class="subscribe__title">Subscribe to newsletter</h2>
-    <p class="subscribe__text">
-      Subscribe to the weekly newsletter for all the latest updates
-    </p>
-    <form class="subscribe__form" action="">
-      <label class="subscribe__label" for="email-subs"></label>
-      <input
-        class="subscribe__input"
-        type="email"
-        name="email"
-        id="email-subs"
-        placeholder="Your email address"
-      />
-      <button class="subscribe__button btn" type="submit">Sign up</button>
+    <p class="subscribe__text">Subscribe to the weekly newsletter for all the latest updates</p>
+    <form class="subscribe__form" id="subscribe-form">
+      <label class="subscribe__label" for="email-subs">
+        <input
+          class="subscribe__input"
+          type="email"
+          name="email"
+          id="email-subs"
+          placeholder="Your email address"
+          required
+        />
+      </label>
+      <button class="subscribe__button btn" type="submit" form="subscribe-form">Sign up</button>
     </form>
   </div>
 </section>

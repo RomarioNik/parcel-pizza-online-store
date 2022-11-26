@@ -88,28 +88,42 @@
         <li class="pizza__item-text">Rosemary</li>
       </ul>
 
-      <form class="pizza__form" action="">
+      <form class="pizza__form" id="select-pizza">
         <label class="pizza__label" for="crust-select">Crust</label>
-        <select class="pizza__select" name="crust" id="crust-select">
+        <select class="pizza__select pizza__select-style" name="crust" id="crust-select" required>
           <option value="">Choose an option</option>
           <option value="thick">thick</option>
           <option value="thin">thin</option>
         </select>
 
         <label class="pizza__label" for="size-select">Size</label>
-        <select class="pizza__select-size" name="size" id="size-select">
+        <select
+          class="pizza__select-size pizza__select-style"
+          name="size"
+          id="size-select"
+          required
+        >
           <option value="">Choose an option</option>
           <option value="25">25cm</option>
           <option value="30">30cm</option>
           <option value="35">35cm</option>
         </select>
 
-        <button class="pizza__button-clear btn">
+        <!-- <button class="pizza__button-clear btn" type="reset" form="select-pizza">
           <svg class="pizza__svg-clear" width="12" height="12">
             <use href="./images/icons/sprite-pizza-shop.svg#icon-clear"></use>
           </svg>
           Clear
-        </button>
+        </button> -->
+        <div class="pizza__wrap-reset">
+          <label class="pizza__label-reset">
+            <svg class="pizza__svg-clear" width="12" height="12">
+              <use href="./images/icons/sprite-pizza-shop.svg#icon-clear"></use>
+            </svg>
+            <input class="pizza__input-reset btn" type="reset" value="Clear" />
+          </label>
+        </div>
+
         <button class="pizza__button-extra btn" data-modal-extra-open>+ Extra option</button>
         <span class="pizza__price">$13.99</span>
         <button class="pizza__button-cart btn" type="button">
