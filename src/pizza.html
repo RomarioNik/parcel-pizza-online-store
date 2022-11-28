@@ -11,15 +11,17 @@
       <section class="page__category category">
         <div class="category__wrap-menu">
           <div class="_container">
-            <ul class="category__menu-list">
-              <li class="category__menu-item">
-                <a class="category__menu-link" href="#">Home</a>
-              </li>
-              <li class="category__menu-item">
-                Pizza
-                <!-- <a class="category__menu-link" href="#">Pizza</a> -->
-              </li>
-            </ul>
+            <nav class="category__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__text">Pizza</span>
+                  <!-- <a class="breadcrumbs__link" href="#">Pizza</a> -->
+                </li>
+              </ul>
+            </nav>
             <h1 class="category__title">Pizza</h1>
           </div>
         </div>
@@ -132,46 +134,48 @@
           </div>
 
           <aside class="category__recomend recomend">
-            <h2 class="recomend__title">We recomend</h2>
-            <ul class="recomend__list">
-              <li class="recomend__item">
-                <!-- RECOMEND CARD -->
-                <include src="./partials/cards/recomend-card.html"></include>
-              </li>
-              <li class="recomend__item">
-                <!-- RECOMEND CARD -->
-                <include src="./partials/cards/recomend-card.html"></include>
-              </li>
-              <li class="recomend__item">
-                <!-- RECOMEND CARD -->
-                <include src="./partials/cards/recomend-card.html"></include>
-              </li>
-              <li class="recomend__item">
-                <!-- RECOMEND CARD -->
-                <include src="./partials/cards/recomend-card.html"></include>
-              </li>
-              <li class="recomend__item">
-                <!-- RECOMEND CARD -->
-                <include src="./partials/cards/recomend-card.html"></include>
-              </li>
-            </ul>
+            <div class="recomend__wrap">
+              <h2 class="recomend__title">We recomend</h2>
+              <ul class="recomend__list">
+                <li class="recomend__item">
+                  <!-- RECOMEND CARD -->
+                  <include src="./partials/cards/recomend-card.html"></include>
+                </li>
+                <li class="recomend__item">
+                  <!-- RECOMEND CARD -->
+                  <include src="./partials/cards/recomend-card.html"></include>
+                </li>
+                <li class="recomend__item">
+                  <!-- RECOMEND CARD -->
+                  <include src="./partials/cards/recomend-card.html"></include>
+                </li>
+                <li class="recomend__item">
+                  <!-- RECOMEND CARD -->
+                  <include src="./partials/cards/recomend-card.html"></include>
+                </li>
+                <li class="recomend__item">
+                  <!-- RECOMEND CARD -->
+                  <include src="./partials/cards/recomend-card.html"></include>
+                </li>
+              </ul>
 
-            <form class="category__range range" action="">
-              <label class="range__label" for="range">Filter by price</label>
-              <input
-                class="range__slider"
-                type="range"
-                id="range"
-                name="range-slider"
-                min="0"
-                max="50"
-              />
-              <p class="range__price">
-                Price: <span class="range__price-from">$10</span> —
-                <span class="range__price-to">$20</span>
-              </p>
-              <button class="range__button" type="submit">Filter</button>
-            </form>
+              <form class="recomend__range range" action="">
+                <label class="range__label" for="range">Filter by price</label>
+                <input
+                  class="range__slider"
+                  type="range"
+                  id="range"
+                  name="range-slider"
+                  min="0"
+                  max="50"
+                />
+                <p class="range__price">
+                  Price: <span class="range__price-from">$10</span> —
+                  <span class="range__price-to">$20</span>
+                </p>
+                <button class="range__button" type="submit">Filter</button>
+              </form>
+            </div>
           </aside>
         </div>
       </section>

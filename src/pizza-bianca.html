@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <include src="./partials/head.html"></include>
+  <body>
+    <!-- HEADER -->
+    <include src="./partials/header.html"></include>
+
+    <!-- MAIN -->
+    <main class="page">
+      <div class="page__container">
+        <section class="page__goods-card goods-card">
+          <div class="goods-card__images"></div>
+
+          <div class="goods-card__description">
+            <nav class="category__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__text" href="#">Pizza</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__text">Pizza bianca</span>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="pizza__description">
+              <h1 class="pizza__link-title">Pizza Bianca</h1>
+
+              <ul class="pizza__list-info">
+                <li class="pizza__item-info">
+                  <button class="pizza__button-sort btn">
+                    <svg class="pizza__svg-hint" width="20" height="20">
+                      <use href="./images/icons/sprite-pizza-shop.svg#icon-leaf"></use>
+                    </svg>
+                    <span class="pizza__tooltip-sort">Vegetarian</span>
+                  </button>
+                </li>
+                <li class="pizza__item-info">
+                  <button class="pizza__button-sort btn">
+                    <svg class="pizza__svg-hint" width="20" height="20">
+                      <use href="./images/icons/sprite-pizza-shop.svg#icon-peper"></use>
+                    </svg>
+                    <span class="pizza__tooltip-sort">Spicy</span>
+                  </button>
+                </li>
+                <li class="pizza__item-info">
+                  <button class="pizza__button-info btn" type="button">
+                    <svg class="pizza__svg-info" width="20" height="20">
+                      <use href="./images/icons/sprite-pizza-shop.svg#icon-information"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+
+              <div class="pizza__facts facts facts__is-hidden">
+                <h4 class="facts__title">Nutritional facts</h4>
+                <ul class="facts__list">
+                  <li class="facts__item">Serving Size 1 slice (63 g)</li>
+                  <li class="facts__item">Per Serving:</li>
+                  <li class="facts__item">Calories 168</li>
+                  <li class="facts__item">Total Fat - 4.7g</li>
+                  <li class="facts__item">Carbohydrates - 20.4g</li>
+                  <li class="facts__item">Protein - 7.6g</li>
+                </ul>
+                <button class="facts__button btn" type="button">
+                  <svg class="facts__svg-close" width="8" height="8">
+                    <use href="./images/icons/sprite-pizza-shop.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <ul class="pizza__list-text">
+                <li class="pizza__item-text">Garlic Flatbread with Mozzarella</li>
+                <li class="pizza__item-text">Parmesan</li>
+                <li class="pizza__item-text">Garlic</li>
+                <li class="pizza__item-text">Rosemary</li>
+              </ul>
+
+              <form class="pizza__form" id="select-pizza">
+                <label class="pizza__label" for="crust-select">Crust</label>
+                <select
+                  class="pizza__select pizza__select-style"
+                  name="crust"
+                  id="crust-select"
+                  required
+                >
+                  <option value="">Choose an option</option>
+                  <option value="thick">thick</option>
+                  <option value="thin">thin</option>
+                </select>
+
+                <label class="pizza__label" for="size-select">Size</label>
+                <select
+                  class="pizza__select-size pizza__select-style"
+                  name="size"
+                  id="size-select"
+                  required
+                >
+                  <option value="">Choose an option</option>
+                  <option value="25">25cm</option>
+                  <option value="30">30cm</option>
+                  <option value="35">35cm</option>
+                </select>
+
+                <div class="pizza__wrap-reset">
+                  <label class="pizza__label-reset">
+                    <svg class="pizza__svg-clear" width="12" height="12">
+                      <use href="./images/icons/sprite-pizza-shop.svg#icon-clear"></use>
+                    </svg>
+                    <input class="pizza__input-reset btn" type="reset" value="Clear" />
+                  </label>
+                </div>
+
+                <button class="pizza__button-extra btn" data-modal-extra-open>
+                  + Extra option
+                </button>
+                <span class="pizza__price">$13.99</span>
+                <button class="pizza__button-cart btn" type="button">
+                  <svg class="pizza__svg-cart" width="13" height="14">
+                    <use href="./images/icons/sprite-pizza-shop.svg#icon-shopping-bag"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="goods-card__money money">
+            <ul class="money__list">
+              <li class="money__item">
+                <svg class="money__icon-svg" width="30" height="30">
+                  <use href="./images/icons/sprite-pizza-shop.svg#icon-security"></use>
+                </svg>
+                <div class="money__description">
+                  <h2 class="money__title">Secured Payments</h2>
+                  <p class="money__text">
+                    We accept credit cards<br />
+                    or cash to a courier
+                  </p>
+                  <div class="money__payments">
+                    <img class="money__img" src="./images/icons/visa.svg" alt="Visa" width="46" />
+                    <img
+                      class="money__img"
+                      src="./images/icons/mastercard.svg"
+                      alt="MasterCard"
+                      width="28"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="money__item">
+                <svg class="money__icon-svg" width="30" height="30">
+                  <use href="./images/icons/sprite-pizza-shop.svg#icon-delivery"></use>
+                </svg>
+                <div class="money__description">
+                  <h2 class="money__title">Delivery</h2>
+                  <p class="money__text">
+                    Shipping cost is $2<br />
+                    (Free from $25)
+                  </p>
+                </div>
+              </li>
+              <li class="money__item">
+                <svg class="money__icon-svg" width="30" height="30">
+                  <use href="./images/icons/sprite-pizza-shop.svg#icon-wallet"></use>
+                </svg>
+                <div class="money__description">
+                  <h2 class="money__title">Save money</h2>
+                  <p class="money__text">
+                    Cras vehicula magna<br />
+                    mauris, eu rutrum sem
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="page__related related"></section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <include src="./partials/footer.html"></include>
+  </body>
+</html>
